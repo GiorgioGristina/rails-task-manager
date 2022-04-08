@@ -1,0 +1,9 @@
+<h1>to do list</h1>
+
+
+
+<% @tasks.each do |task| %>
+  <h3><%= task.title  %> <%= task.completed ? '✅': '❌'  %></h3>
+  <p><%= task.details  %></p>
+  
+<% end %>
