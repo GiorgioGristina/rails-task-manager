@@ -3,5 +3,12 @@
 <p>completed: <%= @task.completed %></p>
 <p><%= @task.details %></p>
 
+<%= link_to 'edit', edit_path %>
+
+<%= link_to 'delete',
+             task_path(@task),
+             method: :delete,
+             data: { confirm: 'are you sure'} %>
+
 
 <%= link_to 'go back', tasks_path %>
